@@ -1,7 +1,8 @@
-# javascript-openweathermap
+# Using JavaScript with the Open Weather Map API
+
 A basic example of using JavaScript with the OpenWeatherMap.
 
-## Tutorial Requirements:
+## Requirements:
 
 * [Visual Studio Code](https://code.visualstudio.com/) 
 * [Open Weather Map API](https://openweathermap.org/api)
