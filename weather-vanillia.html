@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Weather</title>
+</head>
+<body>
+
+    <h1>Current Weather</h1>
+
+    <div id="info"></div>
+
+    <script>
+
+    // Define a variable to store API key and city
+    const api_key = '<API_KEY>';
+    const city = 'Toronto';
+
+    // Create API endpoing
+    const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&appid=' + api_key;
+
+    // Create a new AJAX request object
+    let ajax = new XMLHttpRequest();
+
+    // Define a function to run when the AJAX request state changes
+    ajax.onreadystatechange = function(){
+
+        // If the AJAX request is successful
+        if(ajax.readyState == 4)
+        {
+
+            let weather = JSON.parse(ajax.responseText);
+            console.log(weather);
+
+            let temp = weather.main.temp;
+            console.log(temp);
+
+            let main = weather.weather[0].main;
+            console.log(main);
+
+            let icon = weather.weather[0].icon;
+            console.log(icon);
+
+            let info = document.getElementById('info');
+
+            info.innerHTML = 'Descrption: ' + main + '<br>' + 
+                'Temp: ' + temp + '&deg;C<br>' + 
+                'Icon: <img src="https://openweathermap.org/img/wn/' + icon + '@2x.png">';
+
+        }
+
+	}
+
+    // Initiate the request
+    ajax.open("GET", url, true);
+    ajax.send();
+
+    </script>
+    
+</body>
+</html>
+
+
+
+
