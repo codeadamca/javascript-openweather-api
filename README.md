@@ -1,4 +1,4 @@
-# Using JavaScript with the Open Weather Map API
+# Using JavaScript with the OpenWeather API
 
 A basic example of using JavaScript with the OpenWeatherMap.
 
@@ -7,7 +7,7 @@ A basic example of using JavaScript with the OpenWeatherMap.
 ## Repo Resources
 
 * [Visual Studio Code](https://code.visualstudio.com/) 
-* [Open Weather Map API](https://openweathermap.org/api)
+* [Open Weather API](https://openweathermap.org/api)
 * [jQuery](https://jquery.com/)
 
 <a href="https://codeadam.ca">
