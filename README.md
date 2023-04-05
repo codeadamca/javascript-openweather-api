@@ -2,7 +2,9 @@
 
 A basic example of using JavaScript with the OpenWeatherMap.
 
-## Requirements:
+***
+
+## Repo Resources
 
 * [Visual Studio Code](https://code.visualstudio.com/) 
 * [Open Weather Map API](https://openweathermap.org/api)
